@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background: rgb(226, 198, 40);
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+body,.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background: #f5f5f5;
+    flex-direction: column;
+    max-width: 45rem;
+    border-radius: 1rem;
+    padding: 3rem 4rem;
+}
+img{
+    height: 8rem;
+}
+h1{
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+.container .content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.container .content.disable{
+    opacity: 0.5;
+    pointer-events: none;
+}
+.content .column{
+    border: .1rem solid #999;
+    width: calc(100%/3 - 0.5rem);
+    padding: 0 .2rem;
+    border-radius: .2rem;
+}
+
+.column select{
+    border: none;
+    outline: none;
+    height: 2.5rem;
+    background-color: #f5f5f5;
+    width: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.column select option:hover{
+    background: rgb(226, 198, 40);
+}
+.btn{
+    width: 100%;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    background: rgb(226, 198, 40);
+    color: #fff;
+}
+
+@media (max-width:450px) {
+    h1{
+        font-size: 2.5rem;
+    }
+}
